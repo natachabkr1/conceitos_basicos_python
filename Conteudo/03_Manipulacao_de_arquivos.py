@@ -3,17 +3,20 @@ file = 'arquivo.txt'
 
 ## Abertura de arquivo
 
-# abertura somente para leitura
-arquivo_leitura = open(file, 'r')
-
 # abertura para escrita
-arquivo_escrito = open(file, 'w')
+arquivo_escrita = open(file, "w")   #write
+arquivo_escrita.write("Texto a ser escrito")
+arquivo_escrita.close()
+
+# abertura somente para leitura
+arquivo_leitura = open(file, "r")   #read
+leitura = arquivo_leitura.read()
+print(leitura)
+arquivo_leitura.close()
+
 
 # abertura de arquivos binários
-arquivo_binario = open(file, 'wb')
+arquivo_binario = open(file, "wb")
 
 
-# escrita
 
-
-# leitura

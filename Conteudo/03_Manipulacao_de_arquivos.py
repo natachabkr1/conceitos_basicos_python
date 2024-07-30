@@ -15,8 +15,5 @@ print(leitura)
 arquivo_leitura.close()
 
 
-# abertura de arquivos binários
-arquivo_binario = open(file, "wb")
-
 
 
